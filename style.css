@@ -1,0 +1,73 @@
+/*variables*/
+
+:root{
+ --primary:#E3C567;
+ --secondary:#CB48B7;
+ --tertiary:#A9B3CE;
+ --quartenary:#FF6700;
+ --quinaries:#F4845F;
+
+}
+
+/*reset*/
+body,p,a,ul,li{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+}
+
+/*bases style*/
+/*407*653*/
+body{
+background:var(--tertiary);
+overflow-x: hidden;
+/*font-family*/
+}
+#bloc_page{
+    width:407px;
+    margin: auto;
+}
+.button{
+    background:var(--tertiary);
+    border: 2px solid var(--quartenary);
+    color: var(--quartenary);
+    padding: 6px 12px;
+    border-radius:1px 3px 2px rgba(0,0,0,0.5);
+    display: inline-block;
+    font-size: 1em;
+}
+
+.button:hover{
+    color:var(--quinaries);
+    background: var(--quartenary);
+}   
+
+
+/*Fonts*/
+@font-face{
+    font-family: 'berkshireswash-regular.ttf';
+    src: url('assets/fonts/berkshireswash-regular.ttf'); 
+}
+h1,h2,h3,h4,h5{
+    color:#DDDBFF;
+    font-weight:normal;
+    line-height: 1.0em;
+}
+
+/*Header*/
+header{
+    background:url('assets/img/Brick\ Wall\ Brick\ Wall\ Brown.jpg');
+    height:40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+/*corps*/
+
+.img_article1{
+    float:left;
+    /*margin-right:10px;*/
+}
+/*faire les sections margin
