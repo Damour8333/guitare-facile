@@ -24,7 +24,7 @@ overflow-x: hidden;
 /*font-family*/
 }
 #bloc_page{
-    width:407px;
+    width:434px;
     margin: auto;
 }
 .button{
@@ -64,10 +64,165 @@ header{
     flex-wrap: wrap;
 
 }
+.titre_principal{
+    margin: auto;
+}
+nav{
+    margin: auto;
+}
 /*corps*/
+.article_1_section{
+/*background:red;*/
+padding:20px;
+margin:15px;
+}
 
+.p_article_section{
+    text-align:justify;
+}
 .img_article1{
     float:left;
-    /*margin-right:10px;*/
+    margin-right:10px;
+    
+    
+    
 }
-/*faire les sections margin
+/*ASIDE*/
+
+aside{background:var(--quinaries);
+    padding:30px ;
+}
+.aside_vesubie{
+    align-self:flex-end;
+}
+.aside{
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+ margin: 0.5px;
+}
+.aside_titleh3{
+    font-size:1.5em;
+    text-align: center;
+}
+.img_aside{
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: center;
+    background: var(--primary);
+    gap: 2em;
+}
+.footer_article1{
+    margin-left: 20px;
+}
+.footer_photoguitare{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.footer_listes{
+    display: flex;
+    flex-wrap:  wrap;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*FIRST_INDEX.HTML*/
+/*page principale*/
+/*---------------*/
+.body{
+    background:white;
+    overflow-x: hidden;
+    /*font-family*/
+    }
+.main_background{
+    background: url("assets/img/background.jpg");
+    background-repeat: no-repeat;
+
+    background-position: center;
+    height: 100vh;
+
+}
+/*small tablet styles*/
+@media screen and(min-width: 410px){
+    #bloc_page{
+        width: auto;
+        margin: auto;
+        
+    }
+    .h2{
+        display: none;
+    }
+    /*Style first_index.html*/
+
+}
+
+/*large tablet & laptopstyles*/
+@media screen and (min-width:445px){
+    body{
+        font-size:18px;
+    }
+    #bloc_page{
+        width: auto;
+        margin:auto;
+    }
+   .media_background{
+       display:none;
+   }
+}
+
+/*desktop styles*/
+@media screen and (min-width:700px) {
+    body{
+        font-size:20px;
+    }
+    #bloc_page{
+        width: auto;
+        margin:auto;
+    }
+    nav{
+        margin: auto;
+    }
+    .main{
+        display: flex;
+        
+    }
+    .aside{
+          
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+    }
+
+    /*aside*/
+    aside{
+        background: var(--quinaries);
+       margin-top: 100px;
+        width: 407px;
+}
+/*page principale*/
+.title_main_firstindex{
+    align-self: center;
+} 
+.main_background{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin : 150px;
+
+    gap:200px;
+}
+}
+
+
+
+ 
