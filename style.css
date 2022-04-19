@@ -8,12 +8,15 @@
  --quinaries:#F4845F;
 
 }
+/*fonts family*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Pacifico&family=Palette+Mosaic&family=Raleway:wght@300;400;500&family=Shizuru&family=Syne+Tactile&display=swap');
 
 /*reset*/
 body,p,a,ul,li{
     margin:0;
     padding:0;
     text-decoration:none;
+    font-family: 'Pacifico', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*bases style*/
@@ -21,11 +24,14 @@ body,p,a,ul,li{
 body{
 background:var(--tertiary);
 overflow-x: hidden;
-/*font-family*/
+
 }
 #bloc_page{
-    width:434px;
+    width:437px;
     margin: auto;
+
+
+
 }
 .button{
     background:var(--tertiary);
@@ -57,7 +63,9 @@ h1,h2,h3,h4,h5{
 /*Header*/
 header{
     background:url('assets/img/Brick\ Wall\ Brick\ Wall\ Brown.jpg');
-    height:40vh;
+   background-repeat:no-repeat;
+
+    height:20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +80,7 @@ nav{
 }
 /*corps*/
 .article_1_section{
-/*background:red;*/
+
 padding:20px;
 margin:15px;
 }
@@ -116,6 +124,8 @@ footer{
     justify-content: center;
     background: var(--primary);
     gap: 2em;
+    
+
 }
 .footer_article1{
     margin-left: 20px;
@@ -151,6 +161,35 @@ footer{
     height: 100vh;
 
 }
+.h2{
+    display: none;
+}
+/*formulaire style*/
+form{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--tertiary);
+    padding:1em;
+    margin: 3em;
+}
+form>div{
+    width: auto;
+}
+
+form>div+div{
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+input{
+    width:100%;
+}
+
+
+
+
+
+
+
 /*small tablet styles*/
 @media screen and(min-width: 410px){
     #bloc_page{
@@ -158,10 +197,9 @@ footer{
         margin: auto;
         
     }
-    .h2{
-        display: none;
-    }
+    
     /*Style first_index.html*/
+
 
 }
 
@@ -173,10 +211,12 @@ footer{
     #bloc_page{
         width: auto;
         margin:auto;
+        
     }
    .media_background{
        display:none;
    }
+  
 }
 
 /*desktop styles*/
@@ -188,6 +228,8 @@ footer{
         width: auto;
         margin:auto;
     }
+
+    header{background-size:100vw}
     nav{
         margin: auto;
     }
@@ -195,20 +237,24 @@ footer{
         display: flex;
         
     }
+ 
+    /*aside*/
     .aside{
           
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: auto;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+}
 
-    /*aside*/
     aside{
         background: var(--quinaries);
        margin-top: 100px;
         width: 407px;
 }
+
+/*footer*/
+footer{height: 30vh;}
 /*page principale*/
 .title_main_firstindex{
     align-self: center;
@@ -221,7 +267,42 @@ footer{
 
     gap:200px;
 }
+.h2{
+    display:inline-block;
+    position: relative;
+    top:60px;
 }
+ 
+
+
+
+
+
+
+
+
+    
+     
+    
+ 
+ 
+}
+
+@media screen and (min-width:1000px){
+    form {
+        display:flex;
+        flex-direction: row;
+    }
+    form>fieldset{
+        width: 50%;
+    }
+    form>fieldset+fieldset{
+        margin-left: 1em;
+    }
+}
+
+
+
 
 
 
