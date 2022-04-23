@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Formulaire</title>
 </head>
-<body>
+
     <body class="body" role="document">
         <div id="bloc_page2">
             <header>
@@ -18,9 +18,27 @@
                     
                     <div class="button"><a href="first_index.html" target="_blank"> Acceuil</a></div>
                     <div class="button"><a href="index.html" target="_blank">Articles</a></div>
-                    <div class="button"> <a href="formulaires.html" >Inscriptions</a></div>
+                    <div class="button"> <a href="formulaires.html" >Inscription</a></div>
                     
-                </nav>    
+                </nav>   
+<!-----------------------------------------------Menu Burger----------------------------------------------------------------------------------------->
+                <div id="mySidenav" class="sidenav">
+                    <a id="closeBtn" href="#" class="close">×</a>
+                    <ul>
+                      <li><a href="first_index.html" target="_blank">Acceuil</a></li>
+                      <li><a href="index.html" target="_blank">Articles</a></li>
+                      <li><a href="formulaires.html" target="_blank">Inscriptions</a></li>
+                    </ul>
+                  </div>
+                  
+                  <a href="#" id="openBtn">
+                    <span class="burger-icon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </a>
+    <!----------------------------------------------FIN MENU BURGER-------------------------------------------------------------->              
             </header>
             <main class="main main_background">
                <div class="formulaire">
@@ -101,6 +119,7 @@
                 </div>
             </footer>
         </div> 
+       
     </body>
-</body>
+    <script src="script.js"></script> 
 </html>
