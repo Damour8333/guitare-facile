@@ -1,0 +1,16 @@
+/*faire le menu en bandeau en haut de la page 
+et rajouter acceuil avec le menu bandeau
+et regarder pour mettre les images au format 
+et qu elles soit tres peu lourde 
+refaire le footer en mobile first*/
+
+/*27/04/22
+mettre le images a compresser et au bon format*/
+
+
+/*centrer le titre principale  a 942 px 
+faire le commit - m ''
+
+1.Selectionner les images en fonction du théme ici la guitare et l'esprit rock 
+2.une image doit peser 200ko
+3.avec une resolution de 72 dpis
