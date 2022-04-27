@@ -17,13 +17,13 @@ body,p,a,ul,li{
     margin:0;
     padding:0;
     text-decoration:none;
+    list-style-type: none;
     
     font-family:  'Orbitron', sans-serif;
 
 }
 
 /*bases style*/
-/*407*653*/
 body{
 background:var(--tertiary);
 overflow-x: hidden;
@@ -31,8 +31,9 @@ display: flex;
 flex-direction: column;
 
 }
+
 #bloc_page{
-    width:auto;/*437px*/
+    width:auto;
     margin: auto;
    
    
@@ -85,20 +86,28 @@ header{
     background:url('assets/img/Brick\ Wall\ Brick\ Wall\ Brown.jpg');
    background-repeat:no-repeat;
     position:relative;
-    height:40vh;/*20vh*/
+    height:40vh;
+    
+
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;/*rajouté le 23/04/2022 a rajouter dans les media queries*/
     align-items: flex-start;
-    flex-wrap:  wrap;
+    flex-wrap:wrap;
     z-index: 1;
+
     
 
+    }
+.nav{
+    display:none;
 }
-
 /*25/04/2022*/
 .titrenav{
     text-align-last: right;
+    font-size:1.5em;
+padding-right:2em;
+color: #E3C567;
     
     
 }
@@ -106,11 +115,12 @@ header{
     background-color: var(--tertiary);
     padding: 10px;
     height:40px;
-    width: 97vw;
+    width: 100%;
     right: 0;
-    position:relative;
+    position:absolute;
     top: 0;
     z-index: 2;
+    
     
 }
 
@@ -121,11 +131,8 @@ header{
     width: 250px;/*250px*/
     position: fixed;
     z-index: 12;
-    /*width: 375px;
-    height: 200px;*/
-    top: 0;/*259px et 0*/
+    top: 0;
     left: -250px;
-   
     background-color: var(--primary);
     padding-top: 60px;
     transition: left 0.5s ease;
@@ -174,7 +181,8 @@ header{
     
     position: absolute;
     ;
-    z-index: 3;}
+  z-index: 3;
+}
     span.span1{
         top: 5px;
         left:20px;
@@ -257,14 +265,18 @@ aside{background:var(--quinaries);
 footer{
     display: flex;
     justify-content: center;
-    
+    flex-direction: column;
     background: var(--primary);
     gap: 2em;
+    padding-bottom: 15px;
+
+    
     
     
 
 }
 .footer_article1{
+    
     margin-left: 20px;
 }
 .footer_photoguitare{
@@ -272,13 +284,17 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    margin-left:10px;
+    margin-right:10px;
 }
 .footer_listes{
     display: flex;
     flex-wrap:  wrap;
+    
     gap: 1.5em;
     justify-content: center;
     align-items: center;
+    
     
 }
 
@@ -293,9 +309,9 @@ footer{
 .main_background{
     background: url("assets/img/background.jpg");
     background-repeat: no-repeat;
-
     background-position: center;
     height: 100vh;
+    
 
 }
 .title_main_firstindex{
@@ -331,27 +347,21 @@ input{
 
 
 
-
 /*small tablet styles*/
-@media screen and (min-width:215px)and (max-width:699px){
-    #bloc_page{
-        width: auto;
-        margin: auto;
-        
-    }
-    
-    
-    
-    .nav{
-        display: none;
-    }
+ @media screen and (min-width: 400px){
+     footer{
+         flex-direction: row;
+     }
+     
+ }
     
 
 
-}
+
 
 /*large tablet & laptopstyles*/
-@media screen and (min-width:700px){/*600px*/
+@media screen and (min-width:700px){
+    
     body{
         font-size:18px;
     }
@@ -365,12 +375,27 @@ input{
     }
     header{
         background-size:100vw;
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+
     }
     .bandeau_header{
         display: none;
     }
-    
+    /*footer*/
+    .h2{
+        display:inline-block;
+        position: relative;
+        top:60px;
+       margin-left: 30px;
+       margin-right: 20px;
+    }
+    .main_mediaqueries500px{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        
+    }
 
     /*MENU BURGER*/
     .sidenav,.burger-icon{
@@ -435,6 +460,10 @@ footer{
     height: 30vh;
     align-items: center;
 }
+.footer_listes{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 .influence{
     align-self:flex-start;
 }
@@ -479,7 +508,7 @@ refaire le footer en mobile first*/
 
 
 /*centrer le titre principale  a 942 px 
-faire le commit - m 'menu en position absolute position de chaque span du menu burger en position burger'
+faire le commit - m ''
 
 
 
