@@ -14,3 +14,7 @@ faire le commit - m ''
 1.Selectionner les images en fonction du théme ici la guitare et l'esprit rock 
 2.une image doit peser 200ko
 3.avec une resolution de 72 dpis
+
+
+
+pour le 28 écrire un texte référencé
