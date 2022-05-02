@@ -1,3 +1,12 @@
+1/le menu burger a était copié en partie sur le site https://www.codeur.com/tuto/css/menu-burger-html-css/  
+j 'ai préféré un menu burger pour le menu en mode moblie first,uniquement pour un souci de cohérence.
+Les trois balises span m'ont donné du fil a retordre une fois  passé en position absolute;Finalement les balises était empilé les unes sur les autres.Et il fallait les positionner.
+
+
+
+
+Mémento
+26/04/22
 /*faire le menu en bandeau en haut de la page 
 et rajouter acceuil avec le menu bandeau
 et regarder pour mettre les images au format 
@@ -16,5 +25,16 @@ faire le commit - m ''
 3.avec une resolution de 72 dpis
 
 
+le 28/04/22
+ajout des balises de microdonnées 
+voir sur google pourquoi les balises modifie mon design
+  
+1/05/22
+mettre le menufooter avec les bon liens
+placer correctement la balise script
 
-pour le 28 écrire un texte référencé
+
+2/05/22
+ecarter les lettres de important title en deskstop
+puis mettre le site en ligne
+et mettre pour plus de marge entre dans le menu en desktop

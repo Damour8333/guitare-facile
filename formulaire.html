@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<!-- Balisage des microdonnées ajouté par l'outil d'aide au balisage de données structurées de Google -->
+<html lang="fr"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="cours de guitare pour 
+grand débutant">
+    <link rel="stylesheet" href="style.css"/>
     <title>Formulaire</title>
 </head>
 
     <body class="body" role="document">
-        <div id="bloc_page2">
+        <div itemscope itemtype="http://schema.org/Event" id="bloc_page2">
             <header>
                 <div class="titre_principal">
-                    <h1 class="important_title">GUITARE FACILE</h1>
+                    <h1 itemprop="name" class="important_title">GUITARE FACILE</h1>
                 </div>
                 <nav class="nav">
                     
                     <div class="button"><a href="first_index.html" target="_blank"> Acceuil</a></div>
                     <div class="button"><a href="index.html" target="_blank">Articles</a></div>
-                    <div class="button"> <a href="formulaire.html" >Inscription</a></div>
+                    <div class="button"> <a href="formulaire.html">Inscription</a></div>
                     
                 </nav>   
-<!-----------------------------------------------Menu Burger----------------------------------------------------------------------------------------->
+                <div class="bandeau_header titrenav">acceuil</div>
+<!-- ---------------------------------------------Menu Burger--------------------------------------------------------------------------------------- -->
                 <div id="mySidenav" class="sidenav">
                     <a id="closeBtn" href="#" class="close">×</a>
                     <ul>
@@ -33,12 +36,12 @@
                   
                   <a href="#" id="openBtn">
                     <span class="burger-icon">
-                      <span class ="span1"></span>
+                      <span class="span1"></span>
                       <span class="span2"></span>
                       <span class="span3"></span>
                     </span>
                   </a>
-    <!----------------------------------------------FIN MENU BURGER-------------------------------------------------------------->              
+    <!-- --------------------------------------------FIN MENU BURGER------------------------------------------------------------ -->              
             </header>
             <main class="main main_background">
                <div class="formulaire">
@@ -49,19 +52,19 @@
                         <fieldset>
                             <p>Vous :</p>
                             <p><label for="nom">Nom :</label>
-                                <input type="text">
+                                <input type="text"/>
                             </p>
                             <p>
                                 <label for="prenom">Prenom :</label>
-                                <input type="text">
+                                <input type="text"/>
                             </p>
                             <p>
                                 <label for="email">E-mail :</label>
-                                <input type="text">
+                                <input type="text"/>
                             </p>
                             <p><small><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis suscipit voluptatum illo repellendus beatae nam rem doloribus. Tenetur fuga ipsam accusamus ea cupiditate tempora quaerat, fugit error consectetur illum!</span></small></p>
                             <p>
-                                <input type="submit" value="Envoyer">
+                                <input type="submit" value="Envoyer"/>
                             </p>
                         </fieldset>
                         <fieldset>
@@ -70,8 +73,8 @@
                             ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ab accusantium neque? Ipsa aspernatur ut vel laborum nihil aliquid dicta temporibus. Esse, nemo veritatis cum doloribus hic vero quibusdam saepe!</textarea>
                         </fieldset>
                     </form>
-                    <div class="title2_main_firstindex">
-                        <h2 class="h2">Facilitez de paiement 3 
+                    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="title2_main_firstindex">
+                        <h2 itemprop="price" class="h2">Facilitez de paiement 3 
                    fois sans frais</h2>
                     </div>
             </div>
@@ -86,10 +89,11 @@
                     <p>Le 12 mai à 23h12</p>
                 </div>
                 <div class="footer_photoguitare">
-                    <img src="assets/img/guitar beatles.jpg"  alt="guitar beatles" >
-                    <img src="assets/img/guitar black.jpg"  alt="guitar black" >
-                    <img src="assets/img/guitar rig srv.jpg" alt="guitar srv" >
-                    <img src="assets/img/batterie.png"  alt="batterie" >
+<meta itemprop="image" content="http://www.googleusercontent.com/assets/img/guitar%20beatles.jpg">
+                    <img src="assets/img/guitar beatles.jpg" alt="guitar beatles"/>
+                    <img src="assets/img/guitar black.jpg" alt="guitar black"/>
+                    <img src="assets/img/guitar rig srv.jpg" alt="guitar srv"/>
+                    <img src="assets/img/batterie.png" alt="batterie"/>
                 </div>
                 <div class="footer_listes">
         
@@ -106,15 +110,18 @@
                     <div class="influence">
                         <h4>mes influences</h4>
                         <ul>
-                            <li> <a href="#">Mano solo</a></li>
-                            <li> <a href="#">les hurlements  de léo</a></li>
-                            <li> <a href="#">Les ogres de barback</a></li>
+                            <li> <a href="http://manosolo.free.fr/Musique/tablatures.html" target="_blank">
+<span itemprop="performer" itemscope itemtype="http://schema.org/Person"> 
+<span itemprop="name">Mano solo</span></span></a></li>
+                            
+<span itemprop="performer" itemscope itemtype="http://schema.org/Person">
+<span itemprop="name"><li> <a href="https://hurlements.com/" target="_blank">les hurlements  de léo</a></li>
+                            <li> <a href="https://lesogres.com/" target="_blank">Les ogres de barback</a></li></span></span>
                         </ul>
                     </div>
                 </div>
             </footer>
         </div> 
-       
-    </body>
-    <script src="script.js"></script> 
-</html>
+        <script src="script.js"></script> 
+    
+</body></html>

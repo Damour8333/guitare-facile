@@ -36,11 +36,19 @@ flex-direction: column;
     width:auto;
     margin: auto;
    
-   
-
 }
+
+
+
 .main{
 flex: 1 1 auto;
+
+
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .button{
     background:var(--tertiary);
@@ -68,6 +76,7 @@ flex: 1 1 auto;
 
 text-shadow:var(--tertiary) 1px 3px 0px, var(--tertiary) 1px 13px 5px;
 user-select: auto;
+
 }
 h1,h2,h3,h4,h5{
     color:#DDDBFF;
@@ -216,6 +225,8 @@ color: #E3C567;
 
 .titre_principal{
     margin: auto;
+
+
 }
 nav{
     margin: auto;
@@ -316,8 +327,10 @@ footer{
 }
 .title_main_firstindex{
     
+    
     padding: 2em 2em 2em;
 }
+
 .h2{
     display: none;
     
@@ -360,7 +373,7 @@ input{
 
 
 /*large tablet & laptopstyles*/
-@media screen and (min-width:700px){
+@media screen and (min-width:702px){
     
     body{
         font-size:18px;
@@ -375,9 +388,10 @@ input{
     }
     header{
         background-size:100vw;
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
 
     }
+    
     .bandeau_header{
         display: none;
     }
