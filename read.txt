@@ -35,6 +35,5 @@ placer correctement la balise script
 
 
 2/05/22
-ecarter les lettres de important title en deskstop
+
 puis mettre le site en ligne
-et mettre pour plus de marge entre dans le menu en desktop
